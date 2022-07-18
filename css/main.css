@@ -56,6 +56,7 @@ body{
     background-image: url("../images/bg.png");
     background-color: #F9F9F9;
     overflow-x: hidden;
+    background-position: 0px 85px;
 }
 main{
     flex-grow: 1;
@@ -202,7 +203,6 @@ main{
     align-items: center;
 }
 .header-bottom__logo-link{
-    cursor: pointer;
     position: absolute;
     top: calc(50% - 47px);
     left: -10%;
@@ -1064,4 +1064,11 @@ only screen and (                min-resolution: 2dppx) {
     width: 16px;
     height: 16px;
     content: "";
+}
+
+.footer-box__logo:hover{
+    opacity: 0.8;
+}
+.footer-box__logo:active{
+    opacity: 0.6;
 }
