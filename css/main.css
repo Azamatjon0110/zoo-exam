@@ -1095,6 +1095,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 .our-hero-box__text{
     margin: 0;
+    margin-bottom: 35px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1218,16 +1219,16 @@ only screen and (                min-resolution: 2dppx) {
 .our-list-box__btn--black:active{
     opacity: 0.8;
 }
-.our-list-box__btn--blue{
+.our-list-box-btn--blue{
     background-color: #78C0DE;
     border: 2px solid transparent;
 }
-.our-list-box__btn--blue:hover{
+.our-list-box-btn--blue:hover{
     background-color: #fff;
     color: #78C0DE;
     border: 2px solid #78C0DE;
 }
-.our-list-box__btn--blue:active{
+.our-list-box-btn--blue:active{
  opacity: 0.8;
 }
 
@@ -1357,6 +1358,173 @@ only screen and (                min-resolution: 2dppx) {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-show{
+.modal-show-active{
     display: block;
+}
+.our-box__list-box-link--blue{
+    background-color: #78C0DE;
+}
+.blue-link-bg{
+    margin: 0;
+    background-color: #78C0DE;
+}
+.blue-link-bg:hover{
+    color: #fff;
+    background-color: #333;
+}
+.faq-hero{
+    position: relative;
+    background-image: none;
+}
+.faq-hero::after{
+    position: absolute;
+    top: 12%;
+    left: calc(50% + 360px);
+    padding: 118px 0 63px 0;
+    background-image: url("../images/cat-doc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 466px;
+    content: "";
+}
+
+
+.det-section{
+    padding-bottom: 270px;
+    background-image: url("../images/yellow-beard.png");
+    background-size: 654px, 640px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 645px) calc(50px + 402px);
+}
+.faq-det__boxes{
+    width: 752px;
+    padding: 33px 112px 32px 63px;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+}
+.faq-det__boxes:not(:last-child){
+    margin-bottom: 18px;
+}
+.faq-det__boxes:nth-child(2) .faq-det__top-box .faq-det__time::before{
+    background-image: url("../images/blue-panga.svg");
+}
+.faq-det__boxes:last-child .faq-det__top-box .faq-det__time::before{
+    background-image: url("../images/blue-panga.svg");
+}
+.faq-det__boxes:nth-child(4) .faq-det__top-box .faq-det__time::before{
+    background-image: url("../images/blue-panga.svg");
+}
+.faq-det__time{
+    position: relative;
+    margin-right: 18px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.faq-det__time::before{
+    position: absolute;
+    top: 0%;
+    left: -31%;
+    background-image: url("../images/yellow-panga.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 20px;
+    content: "";
+}
+.faq-det__top-box{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;    
+    text-align: right;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #78C0DE;
+}
+.faq-det__box{
+    margin-top: 12px;
+}
+.faq-det__box[open] .faq-det__sum::after {
+    top: 34%;
+    transform: rotateX(180deg);
+    transition: transform 0.5s ease;
+}
+.faq-det__sum{
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    cursor: pointer;
+}
+.faq-det__sum::after{
+    position: absolute;
+    top: 44%;
+    right: -13%;
+    background-image: url("../images/strelka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 14px;
+    height: 8px;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+.faq-det__boxes:nth-child(3) .faq-det__box .faq-det__sum::after{
+    top: 3%;
+    right: -13.5%;
+    background-image: url("../images/clock.svg");
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+}
+.faq-det__boxes:last-child .faq-det__box .faq-det__sum::after{
+    top: 3%;
+    right: -13.5%;
+    background-image: url("../images/clock.svg");
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+}
+.faq-det__boxes:last-child .faq-det__box[open] .faq-det__sum::after {
+    transform: rotateX(0deg);
+}
+.faq-det__boxes:last-child .faq-det__box .faq-det__sum{
+    cursor: not-allowed;
+}
+.faq-det__boxes:last-child {
+    opacity: 0.5;
+}
+.faq-det__boxes:nth-child(3) .faq-det__box[open] .faq-det__sum::after {
+    transform: rotateX(0deg);
+}
+.faq-det__boxes:nth-child(3) .faq-det__box .faq-det__sum{
+    cursor: not-allowed;
+}
+.faq-det__boxes:nth-child(3) {
+    opacity: 0.5;
+}
+.faq-det__text{
+    margin: 0;
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.faq-footer{
+    padding: 0;
 }
