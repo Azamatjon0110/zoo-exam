@@ -203,6 +203,7 @@ main{
     align-items: center;
 }
 .header-bottom__logo-link{
+    z-index: 5;
     position: absolute;
     top: calc(50% - 47px);
     left: -10%;
@@ -237,6 +238,7 @@ main{
     margin: 0;
 }
 .header-bottom__item:first-child{
+    z-index: 6;
     position: relative;
 }
 .header-bottom__item:first-child:before{
@@ -917,7 +919,7 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
     color: #949494;
 }
-.feed-box-right-title{
+.feed-box__right-title{
     margin: 0;
     margin-bottom: 14px;
     font-weight: 700;
@@ -1296,6 +1298,7 @@ only screen and (                min-resolution: 2dppx) {
     display: flex;
     justify-content: space-between;
     width: 850px;
+    height: 695px;
     background-color: #FFBD54;
     padding: 119px 51px 137px 70px;
     border: 2px solid transparent;
@@ -1392,7 +1395,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .det-section{
     padding-bottom: 270px;
-    background-image: url("../images/yellow-beard.png");
+    background-image: url("../images/yellow-beard.png.png");
     background-size: 654px, 640px;
     background-repeat: no-repeat;
     background-position: calc(50% + 645px) calc(50px + 402px);
@@ -1527,4 +1530,168 @@ only screen and (                min-resolution: 2dppx) {
 
 .faq-footer{
     padding: 0;
+}
+
+.contact-section{
+    padding-bottom: 395px;
+    background-image: url("../images/dog-doc.png");
+    background-size: 773px,568px;
+
+}
+.con-loc__adrs{
+    width: 153px;
+}
+.con-loc__adrs-link{
+    position: relative;
+    font-weight: 500;   
+    font-size: 16px;
+    line-height: 21px;  
+    display: flex;
+    align-items: center;
+    color: #333333;
+    text-decoration: none;
+}
+.con-loc__adrs-link::before{
+    position: absolute;
+    top:  -100px;
+    left: 0%;
+    background-image: url("../images/location.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: 73px;
+    height: 73px;
+
+}
+
+.our-hero-box__text--active{
+    margin-bottom: 240px;
+}
+.con-loc{
+    display: flex;
+}
+.con-loc__time-box{
+    position: relative;
+    margin-left: 118px;
+}
+.con-loc__time-box::before{
+    position: absolute;
+    top: -109%;
+    left: 0%;
+    background-image: url("../images/calendar.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 71px;
+    content: "";
+}
+.herder-top__time-active{
+    display: block;
+
+}
+.con-loc__tel-list{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 118px;
+}
+
+.con-loc__tel-list::before{
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    background-image: url("../images/phone-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 41px;
+    height: 73px;
+}
+.con-loc__tel-list-box{
+    list-style: none;
+    margin-bottom: 9px;
+
+}
+.con-loc__tel{
+    font-weight: 500;   
+    font-size: 16px;    
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+    text-decoration: none;
+}
+
+.con-loc__tel:hover{
+    color: #FFBD54;
+}
+
+.con-loc__adrs-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.con-map-box__iframe{
+    position: relative;
+    top: 0%;
+    right: calc(50% - 348px);
+}
+
+.con-map-box__box{
+    position: relative;
+}
+.con-map-box__box::before{
+    position: absolute;
+    top: -48%;
+    left: -17%;
+    background-image: url("../images/buldog.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 443px;
+    height: 342px;
+    content: "";
+    z-index: 5;
+}
+.con-map-box__img{
+    position: absolute;
+    top: 0%;
+    left: calc(50% + 50px);
+}
+.con-map-box__title{
+    position: relative;
+    margin-right: 200px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: #333333;
+}
+
+.con-map-box__title::before{
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    background-image: url("../images/lupa.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 112px;
+    content: "";
+}
+.con-map-box__title::after{
+    position: absolute;
+    top: -239px;
+    left: 27%;
+    background-image: url("../images/buldog-bgimg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 934px;
+    height: 329px;
+    content: "";
 }
