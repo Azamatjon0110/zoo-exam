@@ -1695,3 +1695,192 @@ only screen and (                min-resolution: 2dppx) {
     height: 329px;
     content: "";
 }
+
+
+
+
+.clinic-hero{
+    background-image: url("../images/klinika-hero-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 380px) calc(50% + 0px);
+    padding-bottom: 288px;
+}
+
+
+.clinic-box{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 90px;
+
+}
+.clinic-box::before{
+    position: absolute;
+    top: -17%;
+    left: calc(50% - 275px);
+    background-image: url("../images/lupa-blue.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 112px;
+    content: "";
+}
+.clinic-box::after{
+    position: absolute;
+    top: -27%;
+    right:  calc(50% + 45px);
+    background-image: url("../images/buldog-bgimg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 668px;
+    height: 235px;
+    content: "";
+}
+.clinic-box__text-box{
+    display: flex;
+    list-style: none;
+    background-color: #fff;
+}
+.clinic-box__img{
+    position: absolute;
+    top: 0%;
+    right: calc(50% + 70px);
+}
+
+
+.clinic-box__place{
+    padding: 127px 0 140px 0;
+    width: 557px;
+    /* margin-left: auto; */
+    position: relative; 
+    top: 0%;
+    left: calc(50% + 66px);
+
+
+}
+
+
+.clinic-box__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #949494;
+}
+
+.clinic-box__text-sp{
+    color: #FFBD54;
+}
+
+.clinic-box__text-box:nth-child(2){
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #f9f9f9;
+}
+.clinic-box__text-box:nth-child(2) .clinic-box__place{
+    position: absolute;    
+    top: 0%;
+    left: calc(50% - 700px);
+}
+
+.clinic-box__img-active{
+    position: relative;
+    top: 18px;
+    right:  calc(50% - 957px);
+}
+
+.clinic-box__text--active{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.clinic-box__text-sp-active{
+    color: #78C0DE;
+}
+
+.about-clinic-section{
+    padding-bottom: 100px;
+}
+
+.hir-cut{
+    display: flex;
+    position: relative;
+}
+
+.hr-cut-box{
+    width: 416px;
+    position: relative;
+    top: 80px;
+    left: calc(50% - 700px);
+}
+
+.hr-cut-box__title{
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.hr-cut-box__title-span{
+    color: #FFBD54;
+}
+
+
+.hr-cut-box__text{
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+.hr-cut-box__text::before{
+    position: absolute;
+    left: calc(50% + 25px);
+    bottom: -170px;
+    background-image: url("../images/numbers.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 47px;
+    content: "";
+}
+.hr-cut-box__text::after{
+    position: absolute;
+    left: calc(50% - 210px);
+    bottom: -150px;
+    background-image: url("../images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 17px;
+    content: "";
+}
+.hr-cut-box__span-all{
+    position: absolute;
+    top: 0%;
+    left: calc(50% + 125px);
+    display: flex;
+}
+
+.hr-cut-box__span{
+    width: 307px;
+    height: 400px;
+    background-image: url("../images/fen-dog.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hr-cut-box__span:not(:last-child){
+    margin-right: 20px;
+}
+
+.hr-cut-box__span:nth-child(2){
+    background-image: url("../images/drakon-cat.png");
+}
+.hr-cut-box__span:nth-child(3){
+    background-image: url("../images/prichoska-dog.png");
+}
